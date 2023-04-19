@@ -1,0 +1,21 @@
+{
+    "config_1": {
+        "server": {
+            "uri": "http://localhost:5984/",
+            "database": "private1_vault",
+            "auth": {
+                "username": "username_of_private_vault",
+                "password": "password_of_private_vault",
+                "passphrase": "passphrase_of_private_vault"
+            },
+            "path": "shared/",
+            "group": "main",
+            "customChunkSize": 100,
+            "usePathObfuscation": false
+        },
+        "local": {
+            "path": "./vault",
+            "--processor": "utils/build.sh"
+        }
+    }
+}

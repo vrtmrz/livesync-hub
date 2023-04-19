@@ -1,0 +1,29 @@
+{
+    "name": "livesync-hub",
+    "version": "0.0.1",
+    "description": "",
+    "main": "main.ts",
+    "type": "commonjs",
+    "scripts": {
+        "dev": "deno run -A main.ts",
+        "build": "node esbuild.config.mjs production"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "pouchdb-adapter-http": "^8.0.1",
+        "pouchdb-adapter-idb": "^8.0.1",
+        "pouchdb-adapter-indexeddb": "^8.0.1",
+        "pouchdb-adapter-memory": "^8.0.1",
+        "pouchdb-core": "^8.0.1",
+        "pouchdb-find": "^8.0.1",
+        "pouchdb-mapreduce": "^8.0.1",
+        "pouchdb-replication": "^8.0.1",
+        "pouchdb-utils": "^8.0.1",
+        "transform-pouch": "^2.0.0",
+        "xxhash-wasm": "^1.0.1"
+    },
+    "devDependencies": {
+        "@types/pouchdb": "^6.4.0"
+    }
+}
